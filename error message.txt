@@ -1,0 +1,16 @@
+[10:42:10] [Server thread/CRITICAL]: ErrorException: "Undefined index: message" (EXCEPTION) in "plugins/CustomAlerts.phar/src/CustomAlerts/CustomAlerts" at line 111
+[10:42:10] [Server thread/DEBUG]: #0 plugins/CustomAlerts.phar/src/CustomAlerts/CustomAlerts(111): pocketmine\utils\Utils::errorExceptionHandler(integer 8, string[24] Undefined index: message, string[82] phar:///home/container/plugins/CustomAlerts.phar/src/CustomAlerts/CustomAlerts.p, integer 111, array[0])
+[10:42:10] [Server thread/DEBUG]: #1 plugins/CustomAlerts.phar/src/CustomAlerts/CustomAlerts(120): CustomAlerts\CustomAlerts->getMotdMessage()
+[10:42:10] [Server thread/DEBUG]: #2 plugins/CustomAlerts.phar/src/CustomAlerts/MotdTask(25): CustomAlerts\CustomAlerts->updateMotd()
+[10:42:10] [Server thread/DEBUG]: #3 src/pocketmine/scheduler/TaskHandler(134): CustomAlerts\MotdTask->onRun(integer 1)
+[10:42:10] [Server thread/DEBUG]: #4 src/pocketmine/scheduler/TaskScheduler(176): pocketmine\scheduler\TaskHandler->run(integer 1)
+[10:42:10] [Server thread/DEBUG]: #5 src/pocketmine/plugin/PluginManager(654): pocketmine\scheduler\TaskScheduler->mainThreadHeartbeat(integer 1)
+[10:42:10] [Server thread/DEBUG]: #6 src/pocketmine/Server(2388): pocketmine\plugin\PluginManager->tickSchedulers(integer 1)
+[10:42:10] [Server thread/DEBUG]: #7 src/pocketmine/Server(2151): pocketmine\Server->tick()
+[10:42:10] [Server thread/DEBUG]: #8 src/pocketmine/Server(1991): pocketmine\Server->tickProcessor()
+[10:42:10] [Server thread/DEBUG]: #9 src/pocketmine/Server(1585): pocketmine\Server->start()
+[10:42:10] [Server thread/DEBUG]: #10 src/pocketmine/PocketMine(273): pocketmine\Server->__construct(object BaseClassLoader, object pocketmine\utils\MainLogger, string[16] /home/container/, string[24] /home/container/plugins/)
+[10:42:10] [Server thread/DEBUG]: #11 src/pocketmine/PocketMine(296): pocketmine\server()
+[10:42:10] [Server thread/DEBUG]: #12 (11): require(string[71] phar:///home/container/PocketMine-MP.phar/src/pocketmine/PocketMine.php)
+[10:42:10] [Server thread/EMERGENCY]: An unrecoverable error has occurred and the server has crashed. Creating a crash dump
+[10:42:10] [Server thread/EMERGENCY]: Please upload the "/home/container/crashdumps/Fri_Jun_5-10.42.10-UTC_2020.log" file to the Crash Archive and submit the link to the Bug Reporting page. Give as much info as you can.
